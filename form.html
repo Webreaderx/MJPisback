@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formsty.css">
+</head>
+<body>
+    <div class="container">
+        <div class="block">
+            <form action="https://formspree.io/f/mzblrdrv" method="post">
+                <div class="headi"><h1>ADMISSION FORM</h1></div>
+                <p class="nata">Student name</p>
+                <input type="text" name="Student Name" class="sata" required>
+                <hr>
+
+                <p class="nata">Father's Name</p>
+                <input type="text" name="Father's name" class="sata" required>
+                <hr>
+
+                <p class="nata">Mobile No.</p>
+                <input type="text"  name="Mobile No" class="sata" maxlength="10" required >
+                <!-- <input type="text" name="+91" title="error msj" pattern="[1-9]{1}[0-9]{9}"> -->
+                <hr>
+
+                <p class="nata">Email</p>
+                <input type="email" name="email" class="sata">
+                <hr>
+
+                <p class="nata">Class for Admission</p>
+                <input type="text" name="class" class="sata" required>
+                <hr>
+
+                <p class="nata">Address</p>
+                <input type="text" name="Address" class="sata">
+                <hr>
+
+                <p class="nata">Vehical require(Y/N)</p>
+                <input type="text" name="vehical" class="sata" maxlength="1">
+                <hr>
+
+                <p class="nata">Adhar No</p>
+                <input type="number" name="adhar" class="sata" >
+                <hr>
+
+                <button type="submit" class="submn">Submit Now</button>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>

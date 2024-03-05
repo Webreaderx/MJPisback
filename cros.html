@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width:100%;
+            background-color: white;
+        }
+        #box{
+            border:1px solid black;
+            height:150px;
+            width:150px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            flex-direction: column;
+        }
+        .lon{
+            width:70%;
+            height:5px;
+            margin:auto;
+            background-color: black;
+            position: relative;
+            transition: all;
+            transition-duration: 1s;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box" onclick="cross()">
+            <hr class="lon " id="r1">
+            <hr class="lon " id="r3">
+            <hr class="lon " id="r2">
+        </div>
+
+    </div>
+
+    <script>
+        let box = document.getElementById("box");
+        let lon =document.getElementsByClassName("lon");
+        let r1 = document.getElementById("r1");
+        let r2 = document.getElementById("r2");
+        let r3 = document.getElementById("r3");
+
+        function cross(){
+            if(r1.style.position!="absolute"){
+                r1.style.position="absolute",
+                r1.style.transform="rotate(45deg)",
+                r2.style.transform="rotate(-45deg)",
+                r3.style.visibility="hidden",
+                r3.style.position="absolute"
+            }
+            else{
+                r1.style.transform="rotate(0deg)",
+                r2.style.transform="rotate(0deg)",
+                r1.style.position="relative",
+                r3.style.visibility="visible",
+                r3.style.position="absolute"
+                
+            }
+        }
+    </script>
+</body>
+</html>

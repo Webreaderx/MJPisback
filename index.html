@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.J.P School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 828px)" href="phone.css">
+    <link rel="stylesheet" media="screen and (max-width: 553px)" href="phone2.css">
+    <link rel="stylesheet" media="screen and (max-width: 444px)" href="phone3.css">
+    <link rel="website icon" type="PNG" href="icon blue.PNG">
+
+</head>
+
+<body>
+    <div class="static"></div>
+    <nav class="navbar">
+        <img src="icon s.PNG" alt="">
+        <p class="headname">MAA JAGDAMBA PUBLIC SCHOOL</p>
+        <!-- <h1 id="selector" onclick="hide()">=</h1> -->
+        <div id="selector" onclick="hide()">
+            <div id="box" onclick="cross()">
+                <hr class="lon " id="r1">
+                <hr class="lon " id="r3">
+                <hr class="lon " id="r2">
+            </div>
+        </div>
+    </nav>
+    <div class="slider">
+        <p class="slider1">Maa Jagdamba Public School,Affiliated to UP Board</p>
+    </div>
+    <div class="container">
+        <h1>MAA JAGDAMBA PUBLIC SCHOOL</h1>
+        <h1>BARAHANA, TOOMAULA ROAD, KOSI KALAN (MATHURA)</h1>
+        <p>BEST CHOICE FOR YOUR CHILD'S EDUCATION</p>
+        <h2><a href="form.html">Admission Now</a></h2>
+    </div>
+    <div class="wel">
+        <h2 class="welc">WELCOME</h2>
+    </div>
+    <div class="logos">
+        <img src="icon s.PNG" alt="">
+    </div>
+    <h1 class="miss"># OUR MISSION IS TO PROVIDE GOOD EDUCATION TO CHILDREN #</h1>
+    <div class="build">
+        <img src="1692530607105.jpg" alt="">
+        <h2 class="absa">SCHOOL IS FILLED WITH GOOD FACILITES</h2>
+    </div>
+    <div id="dexo">
+        <ul class="dexo1">
+            <li class="dexo2"><a href="index.html">Home</a></li>
+            <li class="dexo2"><a href="form.html">Admission</a></li>
+            <li class="dexo2"><a href="help.html">Help</a></li>
+        </ul>
+    </div>
+    <div class="fast">
+        <h1>FACILITIES</h1>
+        <ul class="fast1">
+            <li class="fast2">Fully aired classrooms</li>
+            <li class="fast2">Pure Water</li>
+            <li class="fast2">Transport Facilitiy</li>
+            <li class="fast2">Parents meeting are conducted in school</li>
+            <li class="fast2">Hindi/English mediums are available</li>
+            <li class="fast2">Capable teachers</li>
+            <li class="fast2">Extracurricular activity</li>
+            <li class="fast2">Yoga</li>
+            <li class="fast2">Special focus on week students</li>
+
+
+        </ul>
+    </div>
+    <div class="last">
+        <h3>Maa Jagdamba Public School</h3>
+        <h3>Toomaula Road,Kosi Kalan (Mathura)</h3>
+        <br>
+        <br>
+        <p>www.mjpschool.com</p>
+        <p>Contact No:</p>
+        <br>
+        <p>+91 9837427883,</p>
+        <p>+91 7078629411</p>
+        <br>
+        <br>
+        
+    </div>
+
+    <script>
+        let selector = document.getElementById("selector");
+        let dexo = document.getElementById("dexo");
+
+        function hide() {
+            if (dexo.style.visibility != "visible"){
+                dexo.style.visibility = "visible";
+            }
+            
+            else {
+                dexo.style.visibility = "hidden";
+            }
+        }
+
+
+        // after
+        let box = document.getElementById("box");
+        let lon = document.getElementsByClassName("lon");
+        let r1 = document.getElementById("r1");
+        let r2 = document.getElementById("r2");
+        let r3 = document.getElementById("r3");
+
+        function cross() {
+            if (r1.style.position != "absolute") {
+                r1.style.position = "absolute",
+                    r1.style.transform = "rotate(45deg)",
+                    r2.style.transform = "rotate(-45deg)",
+                    r3.style.visibility = "hidden",
+                    r3.style.position = "absolute"
+            }
+            else {
+                r1.style.transform = "rotate(0deg)",
+                    r2.style.transform = "rotate(0deg)",
+                    r1.style.position = "relative",
+                    r3.style.visibility = "visible",
+                    r3.style.position = "absolute"
+
+            }
+        }
+    </script>
+</body>
+
+</html>
